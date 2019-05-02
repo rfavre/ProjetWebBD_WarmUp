@@ -19,9 +19,9 @@ USE `teaching`;
 -- Dumping structure for table teaching.users
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `userEmailAddress` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
-  `userPsw` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
-  `pseudo` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+  `userEmailAddress` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `userPsw` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `pseudo` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `userEmailAddress` (`userEmailAddress`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
